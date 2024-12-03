@@ -25,7 +25,7 @@ public class Day02 {
         return reports;
     }
 
-    // Part 1: Checks if a report is strictly increasing or decreasing and satisfies the difference constraint
+    // Part 1
     public static int getSafe(String file) {
         List<List<Integer>> reports = getReports(file);
         int safeCount = 0;
@@ -55,7 +55,7 @@ public class Day02 {
         return safeCount;
     }
 
-    // Part 2: Checks if removing one level can make an unsafe report safe
+    // Part 2
     public static int getSafePart2(String file) {
         List<List<Integer>> reports = getReports(file);
         int safeCount = 0;
@@ -82,7 +82,7 @@ public class Day02 {
 
     // Helper method to check if a report is safe
     private static boolean isReportSafe(List<Integer> report) {
-        if (report.size() < 2) return true; // Single-level reports are always safe
+        if (report.size() < 2) return true; 
 
         boolean increasing = report.get(0) < report.get(1);
 
