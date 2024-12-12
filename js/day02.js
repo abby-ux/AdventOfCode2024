@@ -31,7 +31,6 @@ function getPartOne(filename) {
     let safe = 0;
     // loop through the reports and count which ones are safe
     for (let i = 0; i < reports.length; i++) {
-        // console.log(reports[i]);
         if (isSafe(reports[i])) {
             safe++;
         }
