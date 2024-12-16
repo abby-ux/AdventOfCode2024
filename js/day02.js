@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 function getReports(filename) {
-    const lines = fs.readFileSync(filename).toString().split('\n');
+    const fileInput = fs.readFileSync(filename).toString().split('\n');
     const reports = [];
     lines.forEach((line) => {
         const report = line.split(" ").map(num => parseInt(num));
